@@ -14,37 +14,33 @@
     --footer-color: #4d5ae5;
     --footer-background: #4d5ae5;
 }
-
 body {
     font-family: "Roboto", sans-serif;
     color: var(--primary-color);
     background-color: var(--primary-white-background);
 }
-
 h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-
 ul {
 	margin: 0;
 	padding-left: 0;
 }
-
 img {
     display: block;
   }
-
+  input {
+    font-family: inherit;
+  }
 .link {
     text-decoration: none;
 }
-
 .list {
     list-style: none;
     margin: 0;
 	padding-left: 0;
 }
-
 .container {
     max-width: 1158px;
     width: 100%;
@@ -241,6 +237,87 @@ img {
 .footer-social-link:focus {
     background-color: #31d0aa;
 }
+
+.footer-block {
+    margin-left: 80px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.text-form {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color);
+    margin-bottom: 16px;
+}
+
+.footer-input {
+    display: block;
+    min-width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    margin-right: 24px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--secondary-background);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
+}
+
+.footer-input:focus,
+.footer-input:active {
+    border: 1px solid var(--footer-color);
+}
+
+.subcribe-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    background: var(--footer-color);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-svg {
+    display: block;
+    margin-left: 16px;
+    background-color: var(--footer-color);
+    fill: var(--primary-white-color);
+    margin-left: 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subcribe-btn:hover,
+.subcribe-btn:focus {
+    background-color: var(--primary-accent-background);
+}
+
+.subcribe-btn:hover .btn-svg,
+.subcribe-btn:focus .btn-svg {
+    background-color: var(--primary-accent-background);
+}
+
 
 
 /* ------------Section1------------ */
@@ -745,5 +822,185 @@ img {
     pointer-events: none;
     visibility: hidden;
   }
+
+.modal-paragraph {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 16px;
+}
+
+
+.modal-form {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.modal-input {
+    margin-bottom: 8px;
+}
+
+.lable-form {
+    font-family: var(--primary-font);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.input-info {
+    
+}
+
+.input-form {
+    display: block;
+    width: 360px;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding-left: 16px;
+    background-color: transparent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-form:focus {
+    border-color: var(--footer-color);
+}
+
+.modal-svg {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 16px;
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-form:focus-within .modal-icon {
+    fill: var(--footer-color);
+}
+
+.textarea-input {
+    margin-bottom: 16px;
+}
+
+.textarea-form {
+    display: block;
+    background-color: transparent;
+    margin-top: 4px;
+    width: 360px;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    padding: 8px 16px;
+}
+
+.textarea-form:focus {
+    border-color: var(--footer-color);
+}
+
+.textarea-form::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-checkbox {
+    margin-bottom: 24px;
+}
+ .privacy-checkbox {
+    font-family: var(--primary-font);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+ }
+
+ .privacy-link {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: var(--footer-color);
+ }
+
+ .check-block {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .check-svg {
+    display: inline-block;
+    fill: #fcfcfc;
+ }
+
+ .input-check:checked + .privacy-checkbox > .check-block {
+    background-color: var(--primary-accent-background);
+    border: none;
+    fill: var(--primary-white-color);
+ }
+
+ .send-btn {
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    margin: 24px auto;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
+    background: var(--footer-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+.send-btn:hover,
+.send-btn:focus {
+    background-color: var(--primary-accent-background);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
