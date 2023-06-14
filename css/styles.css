@@ -244,6 +244,7 @@ img {
 
 .footer-form {
     display: flex;
+    gap: 24px;
 }
 
 .text-form {
@@ -257,21 +258,22 @@ img {
 
 .footer-input {
     display: block;
-    min-width: 264px;
+    width: 264px;
     height: 40px;
-    padding: 8px 16px;
+    padding-left: 16px;
     margin-right: 24px;
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: var(--secondary-background);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primary-white-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input::placeholder {
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
     color: var(--primary-white-color);
 }
 
@@ -288,19 +290,22 @@ img {
     min-width: 165px;
     height: 40px;
     padding: 8px 24px;
-    background: var(--footer-color);
-    border-radius: 4px;
+    background-color: var(--footer-color);
+    color: var(--primary-white-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    border-radius: 4px;
     border: none;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-svg {
     display: block;
+    width: 24px;
+    height: 24px;
     margin-left: 16px;
     background-color: var(--footer-color);
     fill: var(--primary-white-color);
@@ -775,6 +780,7 @@ img {
     min-height: 584px;
     top: 50%;
     left: 50%;
+    padding: 72px 24px 24px 24px; 
     transform: translate(-50%, -50%);
     background-color: #FCFCFC;
     border-radius: 4px;
@@ -831,16 +837,7 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
-    padding-top: 72px;
-    padding-left: 24px;
-    padding-right: 24px;
     margin-bottom: 16px;
-}
-
-
-.modal-form {
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
 .modal-input {
@@ -848,7 +845,6 @@ img {
 }
 
 .lable-form {
-    font-family: var(--primary-font);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -858,17 +854,18 @@ img {
 }
 
 .input-info {
-    
+    position: relative;
 }
 
 .input-form {
     display: block;
-    width: 360px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding-left: 16px;
+    padding-left: 38px;
     background-color: transparent;
+    outline: transparent;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -879,8 +876,9 @@ img {
 
 .modal-svg {
     position: absolute;
-    transform: translateY(-50%);
     left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
     fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -895,9 +893,9 @@ img {
 
 .textarea-form {
     display: block;
-    background-color: transparent;
     margin-top: 4px;
-    width: 360px;
+    padding: 8px 16px;
+    width: 100%;
     height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -905,8 +903,11 @@ img {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    background-color: transparent;
     color: rgba(46, 47, 66, 0.4);
-    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-form:focus {
@@ -923,6 +924,7 @@ img {
 .modal-checkbox {
     margin-bottom: 24px;
 }
+
  .privacy-checkbox {
     font-family: var(--primary-font);
     font-size: 12px;
@@ -969,7 +971,7 @@ img {
     display: block;
     align-items: center;
     text-align: center;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     padding: 16px 32px;
     margin: 24px auto;
@@ -983,6 +985,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
@@ -990,8 +993,6 @@ img {
 .send-btn:focus {
     background-color: var(--primary-accent-background);
 }
-
-
 
 
 
