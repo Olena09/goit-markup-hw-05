@@ -883,7 +883,7 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-form:focus-within .modal-icon {
+.input-form:focus-within .modal-svg {
     fill: var(--footer-color);
 }
 
@@ -964,22 +964,23 @@ img {
  .input-check:checked + .privacy-checkbox > .check-block {
     background-color: var(--primary-accent-background);
     border: none;
-    fill: var(--primary-white-color);
+    fill: var(--third-color);
  }
 
  .send-btn {
     display: block;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     min-width: 169px;
     height: 56px;
     padding: 16px 32px;
     margin: 24px auto;
-    font-family: var(--primary-font);
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    text-align: center;
     color: var(--primary-white-color);
     background: var(--footer-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
