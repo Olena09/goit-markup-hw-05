@@ -261,7 +261,6 @@ img {
     width: 264px;
     height: 40px;
     padding-left: 16px;
-    margin-right: 24px;
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -962,6 +961,10 @@ img {
     fill: #fcfcfc;
  }
 
+ .input-check:focus + .privacy-checkbox > .check-block {
+    border-color: var(--footer-color);
+ }
+
  .input-check:checked + .privacy-checkbox > .check-block {
     background-color: var(--primary-accent-background);
     border: none;
@@ -975,7 +978,7 @@ img {
     min-width: 169px;
     height: 56px;
     padding: 16px 32px;
-    margin: 24px auto;
+    margin: 0 auto;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
